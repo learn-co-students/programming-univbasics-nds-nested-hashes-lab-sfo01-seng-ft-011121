@@ -13,24 +13,21 @@ def assembled_aoh
     PAT_M,
     KATE_G,
     BRUCE_G
-    ]
+  ]
 end
 
 def literal_aoh
-  [
-    DON_G,
-    JOELLE_VD,
-    PAT_M,
-    KATE_G,
-    BRUCE_G
-    ]
+  assembled_aoh
 end
 
-def aoh_lookup(aoh, row, key)
-  aoh[row][key]
+def aoh_lookup(aoh, i, k)
+  aoh[i][k]
 end
 
-def aoh_update(aoh, row, key, new_value)
-  aoh[row][key] = new_value
+def aoh_update(aoh, i, k, val)
+  aoh[i][k] = val
   aoh
 end
+
+
+
